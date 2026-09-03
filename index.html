@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Local Năvodari | Traseu T2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: #0b1a2f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            max-width: 1100px;
+            width: 100%;
+            background: #f0f6fc;
+            border-radius: 40px;
+            padding: 30px 25px 40px;
+            box-shadow: 0 25px 50px -8px rgba(0,0,0,0.8);
+            border: 1px solid #3e6a8c;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0a2a44;
+            letter-spacing: -0.5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 4px solid #1e4b6e;
+            padding-bottom: 12px;
+            margin-bottom: 10px;
+        }
+        h1 small {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1f4b6e;
+            background: #d4e3f0;
+            padding: 4px 16px;
+            border-radius: 40px;
+            margin-top: 6px;
+        }
+        .subhead {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: #d9e6f2;
+            padding: 14px 20px;
+            border-radius: 60px;
+            margin: 16px 0 24px 0;
+            font-weight: 600;
+            color: #052238;
+            font-size: 1.1rem;
+        }
+        .subhead span {
+            background: #0f344f;
+            color: white;
+            padding: 2px 18px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            margin-left: 8px;
+        }
+        .table-wrap {
+            overflow-x: auto;
+            border-radius: 24px;
+            background: white;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            min-width: 600px;
+        }
+        th {
+            background: #123e5e;
+            color: white;
+            font-weight: 600;
+            padding: 16px 12px;
+            text-align: center;
+            border-right: 1px solid #2b5a7a;
+        }
+        th:last-child { border-right: none; }
+        td {
+            padding: 14px 12px;
+            text-align: center;
+            border-bottom: 1px solid #cfdeec;
+            background-color: white;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td {
+            background-color: #e5f0fa;
+            transition: 0.1s;
+        }
+        .highlight {
+            background: #f7f2d4;
+            font-weight: 600;
+        }
+        .highlight td {
+            background: #f7f2d4;
+        }
+        .badge {
+            background: #1d6999;
+            color: white;
+            border-radius: 30px;
+            padding: 2px 14px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .footnote {
+            margin-top: 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: #c7dbe9;
+            padding: 12px 24px;
+            border-radius: 60px;
+            color: #021d31;
+            font-size: 0.95rem;
+        }
+        .footnote strong {
+            background: #0b2d46;
+            color: white;
+            padding: 3px 18px;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        .update {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 10px;
+            text-align: right;
+            color: #1a405a;
+        }
+        @media (max-width: 700px) {
+            .card { padding: 18px 14px; }
+            h1 { font-size: 1.6rem; }
+            .subhead { flex-direction: column; align-items: flex-start; gap: 8px; }
+            td, th { padding: 10px 6px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>
+        <span>🚌 T2 · Lidl – Mamaia Sat – Hotel Opera</span>
+        <small>circuit</small>
+    </h1>
+    <div class="subhead">
+        <span>📍 33 stații</span>
+        <span>📏 19,57 km</span>
+        <span>🔄 18 curse / zi</span>
+        <span>📅 de la 1 septembrie</span>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Plecare Autogară</th>
+                    <th>Hanul cu Pește <br><span style="font-weight:400;font-size:0.8rem;">(+35 min)</span></th>
+                    <th>Sosire Autogară</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>05:45</td><td>06:20</td><td>06:45</td></tr>
+                <tr><td>2</td><td>06:50</td><td>07:25</td><td>07:50</td></tr>
+                <tr><td>3</td><td>07:55</td><td>08:30</td><td>08:50</td></tr>
+                <tr><td>4</td><td>08:55</td><td>09:30</td><td>09:50</td></tr>
+                <tr><td>5</td><td>09:55</td><td>10:30</td><td>10:50</td></tr>
+                <tr><td>6</td><td>10:50</td><td>11:25</td><td>11:40</td></tr>
+                <tr><td>7</td><td>11:40</td><td>12:15</td><td>12:30</td></tr>
+                <tr><td>8</td><td>12:35</td><td>13:10</td><td>13:30</td></tr>
+                <tr><td>9</td><td>13:35</td><td>14:10</td><td>14:30</td></tr>
+                <tr><td>10</td><td>14:35</td><td>15:10</td><td>15:30</td></tr>
+                <tr><td>11</td><td>15:35</td><td>16:10</td><td>16:30</td></tr>
+                <tr><td>12</td><td>16:30</td><td>17:05</td><td>17:30</td></tr>
+                <tr><td>13</td><td>17:35</td><td>18:10</td><td>18:30</td></tr>
+                <tr><td>14</td><td>18:35</td><td>19:10</td><td>19:30</td></tr>
+                <tr><td>15</td><td>19:30</td><td>20:05</td><td>20:30</td></tr>
+                <tr><td>16</td><td>20:35</td><td>21:10</td><td>21:30</td></tr>
+                <tr><td>17</td><td>21:35</td><td>22:10</td><td>22:30</td></tr>
+                <tr><td>18</td><td>22:35</td><td>23:10</td><td>23:30</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footnote">
+        <span>⏱️ <strong>Program orientativ</strong></span>
+        <span>📌 Verifică actualizările oficiale ale operatorului</span>
+    </div>
+    <div class="update">
+        ⚡ Date valabile din 1 septembrie · Transport Local Năvodari
+    </div>
+</div>
+</body>
+</html>
